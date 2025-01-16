@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PyTorch Fundamentals | Archit S</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+
+    <style>
+       
+      code {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+       
+      body.dark-mode code {
+        background-color: #333;
+        color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div style="position: fixed; top: 10px; right: 10px;">
+      <button id="theme-toggle">🌙</button>
+    </div>
+
+    
+    <nav>
+      <ul class="menu">
+        
+        <li><a href="/">Home</a></li>
+        
+      </ul>
+      <hr />
+    </nav>
+
+  </body>
+</html>
+<div class="article-meta">
+<h1><span class="title">PyTorch Fundamentals</span></h1>
+
+<h2 class="date">2025/01/17</h2>
+</div>
+<main>
+<h2 id="importing-pytorch">Importing PyTorch</h2>
+<p>Let&rsquo;s start by importing PyTorch and checking the version we&rsquo;re using.</p>
+<pre tabindex="0"><code>import torch
+torch.__version__
+</code></pre><pre tabindex="0"><code>2.5.1+cu121
+</code></pre><p>It looks like we&rsquo;ve got PyTorch 2.5.1+.</p>
+<hr>
+<h2 id="introduction-to-tensors">Introduction to Tensors</h2>
+<p>Tensors are multi-dimensional arrays with a uniform type. In machine learning,
+the term tensor informally refers to two different concepts :</p>
+<ol>
+<li>a way of organizing data and</li>
+<li>a multilinear (tensor) transformation.
+Data may be organized in a multidimensional array (M-way array).</li>
+</ol>
+<p>For example, you could represent an image as a tensor with shape <code>[3, 224, 224]</code>
+which could mean <code>[colour_channels, height, width]</code>. Thus, the tensor would have
+dimensions.</p>
+<p>For a detailed explanation of tensors, you can refer to a video by Dan Fleisch:
+<a href="https://www.youtube.com/watch?v=f5liqUk0ZTw">What&rsquo;s a Tensor?</a>.</p>
+<h2 id="creating-tensors">Creating Tensors</h2>
+<p>There is a whole documentation page for the <a href="https://pytorch.org/docs/stable/tensors.html"><code>torch.Tensor</code></a> class.</p>
+<p>Let&rsquo;s see a few of the data types which can be defined as :</p>
+<p><code>torch.float32</code> or <code>torch.float</code> for 32-bit floating point</p>
+<p><code>torch.float64</code> or <code>torch.double</code> for 64-bit floating point</p>
+<p><code>torch.complex64</code> or <code>torch.cfloat</code> for 64-bit complex point</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  <script src="/js/theme-toggle.js" defer></script>
+  </body>
+</html>

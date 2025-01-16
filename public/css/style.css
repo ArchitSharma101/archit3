@@ -1,0 +1,207 @@
+/* General Body Styling */
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  background: #ffffff;  /* Light mode background */
+  color: #333333;       /* Light mode text color */
+}
+
+/* Header and Footer Areas */
+.menu {
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.article-meta, .menu a {
+  text-decoration: none;
+  background: #ffffff; /* Light mode background */
+  color: #333333;      /* Light mode text color */
+  padding: 5px;
+  border-radius: 5px;
+}
+.menu, .article-meta, footer {
+  text-align: center;
+}
+.title {
+  font-size: 1.1em;
+}
+footer a {
+  text-decoration: none;
+  color: #333333; /* Light mode footer link color */
+}
+hr {
+  border-style: solid;
+  color: #ddd;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode {
+  background: #121212;  /* Dark mode background */
+  color: #f4f4f4;       /* Light text for dark mode */
+}
+
+body.dark-mode .article-meta, 
+body.dark-mode .menu a {
+  background: #333333;  /* Dark mode background for buttons/links */
+  color: #f4f4f4;       /* Light text for links */
+}
+
+body.dark-mode footer a {
+  color: #f4f4f4;       /* Light footer link color in dark mode */
+}
+
+body.dark-mode hr {
+  color: #555;          /* Darker horizontal rule for dark mode */
+}
+
+
+/* code */
+pre {
+  border: 1px solid #ddd;
+ /* box-shadow: 5px 5px 5px #eee; */
+  padding: 1em;
+  overflow-x: auto;
+}
+body.dark-mode pre {
+  background-color: #2d2d2d;        /* Dark background for code blocks */
+  color: #f4f4f4;                   /* Light text for contrast */
+  border: 1px solid #555;           /* Darker border for dark mode */
+  /* box-shadow: 5px 5px 5px #333; */     /* Darker shadow for dark mode */
+}
+
+code { background: #f9f9f9; }
+pre code { background: none; }
+
+/* misc elements */
+img, iframe, video { max-width: 100%; }
+main { hyphens: auto; }
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 3px 1em 3px;
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+/* Default light mode styles */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: rgb(28, 27, 27);
+  color: rgb(255, 255, 255);
+}
+
+/* Style for the toggle button */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Default light mode */
+code {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Dark mode styling */
+body.dark-mode code {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Style for inline code */
+code {
+  background-color: #f4f4f4;   /* Light background for light mode */
+  color: #333;                  /* Dark text for contrast */
+  padding: 2px 4px;             /* Padding for better visibility */
+  border-radius: 4px;           /* Rounded corners for better styling */
+  font-family: 'Courier New', Courier, monospace;  /* Monospace font for code */
+}
+
+/* Style for code blocks */
+pre {
+  background-color: #f4f4f4;    /* Light background for code blocks */
+  color: #333;                   /* Dark text */
+  padding: 16px;                 /* Padding to separate code from other content */
+  border-radius: 8px;            /* Rounded corners for block code */
+  overflow-x: auto;              /* Allow horizontal scrolling if code is too wide */
+  border: 1px solid #ddd;       /* Light border around code blocks */
+}
+
+/* Dark mode adjustments for code */
+body.dark-mode code {
+  background-color: #333;       /* Dark background for dark mode */
+  color: #f4f4f4;               /* Light text for dark mode */
+}
+
+body.dark-mode pre {
+  background-color: #2d2d2d;    /* Dark background for code blocks */
+  color: #f4f4f4;               /* Light text */
+  border: 1px solid #555;       /* Dark border for dark mode */
+}
+
+/* Metadata box style */
+.metadata-box {
+  background-color: #f4f4f4;    /* Light background for light mode */
+  color: #333;                   /* Dark text for contrast */
+  padding: 16px;                 /* Padding inside the box */
+  border-radius: 8px;            /* Rounded corners */
+  border: 1px solid #ddd;       /* Light border for the box */
+  margin-bottom: 20px;           /* Space below the metadata box */
+}
+
+/* Dark mode adjustments for metadata box */
+body.dark-mode .metadata-box {
+  background-color: #333;       /* Dark background for dark mode */
+  color: #f4f4f4;               /* Light text for dark mode */
+  border: 1px solid #555;       /* Dark border for dark mode */
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333; /* Light mode link color */
+  background: #f4f4f4; /* Light background */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+body.dark-mode .menu a {
+  color: #f4f4f4; /* Dark mode link color */
+  background: #333; /* Dark background */
+}

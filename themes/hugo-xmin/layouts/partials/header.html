@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+    {{ partial "head_custom.html" . }}
+
+    <style>
+      /* Default light mode */
+      code {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      /* Dark mode styling */
+      body.dark-mode code {
+        background-color: #333;
+        color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Theme Toggle Button -->
+    <div style="position: fixed; top: 10px; right: 10px;">
+      <button id="theme-toggle">🌙</button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <hr />
+    </nav>
+
+  </body>
+</html>
