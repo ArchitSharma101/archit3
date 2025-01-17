@@ -32,7 +32,8 @@
 </button>
   {{ $darkModeJS := resources.Get "js/dark-mode.js" | resources.Minify }}
 <script src="{{ $darkModeJS.RelPermalink }}" defer></script>
-
+{{ $darkModeCSS := resources.Get "css/dark-mode.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $darkModeCSS.RelPermalink }}">
     <!-- Navigation Menu -->
     <nav>
       <ul class="menu">
