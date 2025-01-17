@@ -1,0 +1,14 @@
+/* dark-mode.css */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button#dark-mode-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
