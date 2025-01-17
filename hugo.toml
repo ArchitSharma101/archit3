@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/ArchitSharma101/archit3/'
+baseURL = 'https://architsharma101.github.io/archit3'
 languageCode = 'en-us'
 title = 'Archit S'
 theme = 'hugo-xmin'
