@@ -30,7 +30,7 @@
 <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
     🌙 Dark Mode
 </button>
-  {{ $darkModeJS := resources.Get "js/dark-mode.js" | resources.Minify }}
+  {{ $darkModeJS := .Resources.Get "js/dark-mode.js" | resources.Minify }}
 <script src="{{ $darkModeJS.RelPermalink }}" defer></script>
 {{ $darkModeCSS := resources.Get "css/dark-mode.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ $darkModeCSS.RelPermalink }}">
